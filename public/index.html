@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curated list of premium products and smart gear with top-tier deals and recommendations. Find exactly what you need.">
+  <meta name="keywords" content="affiliate, smart home, travel gear, office setup, products, deals">
+  <title>SmartPicks | Curated Gear & Smart Deals</title>
+  
+  <!-- Premium Style sheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Inline script to prevent theme flash (FOUC) -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+      const theme = savedTheme || (prefersLight ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo" id="header-logo">
+        <i class="logo-icon">⭐</i>
+        <span>SmartPicks</span>
+      </a>
+      
+      <div class="search-bar">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input type="text" id="search-input" placeholder="Search curated products..." autocomplete="off">
+      </div>
+      
+      <div class="header-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle theme">
+          <!-- Dynamically filled by app.js -->
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Discover the Best <span>Curated Products</span></h1>
+    <p>Hand-picked recommendations for your smart home, workspace setup, and travel essentials. Click through to find direct deals.</p>
+  </section>
+
+  <!-- Main Workspace -->
+  <main>
+    <div class="layout-container">
+      <!-- Category Selection component container -->
+      <div id="categories-root"></div>
+      
+      <!-- Section Header -->
+      <div class="section-header">
+        <h2 class="section-title">Recommendations</h2>
+        <span class="product-count" id="product-count-badge">Loading...</span>
+      </div>
+
+      <!-- Products Grid component container -->
+      <div id="products-root"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">SmartPicks</div>
+      <div class="footer-text">
+        &copy; <span id="current-year"></span> SmartPicks. All rights reserved. This site uses affiliate links and we may earn a small commission on purchases at no extra cost to you.
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application logic entry point -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

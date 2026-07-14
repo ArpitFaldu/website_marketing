@@ -1,0 +1,62 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.sample
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor and IDE config files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.project
+.classpath
+.settings/
+
+# Runtime / Temp / Build files
+dist/
+build/
+out/
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.next/
+.nuxt/
+tmp/
+temp/
+
+# Vercel
+.vercel/
+
+
+# Scraper & local data output
+# (Uncomment the lines below if you do not want to track scraped product data or downloaded images)
+# products_scraped.json
+# public/images/product_*.jpg
